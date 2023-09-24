@@ -92,9 +92,9 @@ repositories {
             includeGroup 'curse.maven'
         }
     }
-    // flatDir {
-    //     dir 'libs'
-    // }
+    flatDir {
+        dir 'libs'
+    }
     mavenLocal() // Must be last for caching to work
 }
 
@@ -107,7 +107,10 @@ dependencies {
     }
 
     // Example of deobfuscating a dependency
-    // implementation rfg.deobf('industrialcraft-2:industrialcraft-2-2.8.222-ex112')
+    // implementation rfg.deobf('CoFHCore:CoFHCore-1.12.2-4.6.6.1-universal')
+    // implementation rfg.deobf('ThermalFoundation:ThermalFoundation-1.12.2-2.6.7.1-universal')
+    // implementation rfg.deobf('RedstoneFlux:RedstoneFlux-1.12-2.1.1.1-universal')
+    // implementation rfg.deobf('CoFHWorld:CoFHWorld-1.12.2-1.4.0.1-universal')
 
     if (project.use_mixins.toBoolean()) {
         // Change your mixin refmap name here:
