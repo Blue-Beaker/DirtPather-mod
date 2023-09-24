@@ -1,0 +1,16 @@
+{
+    "required": true,
+    "compatibilityLevel": "JAVA_8",
+    "package": "io.bluebeaker.dirtpather.mixin",
+    "mixins": [
+      "MixinItemSpade"
+    ],
+    "client": [
+    ],
+    "server": [
+    ],
+    "injectors": {
+      "defaultRequire": 1
+    },
+    "refmap": "mixins.dirtpather.refmap.json"
+  }
